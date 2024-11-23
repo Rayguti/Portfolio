@@ -2,11 +2,24 @@
 
   "use strict";
 
-    // COLOR MODE
-    $('.color-mode').click(function(){
-        $('.color-mode-icon').toggleClass('active')
-        $('body').toggleClass('dark-mode')
-    })
+  const darkMode = localStorage.getItem('darkMode') || 'enabled';
+
+    if (darkMode  === 'enabled') {
+      $('body').addClass('dark-mode');
+      $('.color-mode-icon').addClass('active');
+    }
+  
+    $('.color-mode').click(function() {
+      $('.color-mode-icon').toggleClass('active');
+      $('body').toggleClass('dark-mode');
+
+      
+      if ($('body').hasClass('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    });
 
     // HEADER
     $(".navbar").headroom();
