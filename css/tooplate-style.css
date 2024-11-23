@@ -637,7 +637,6 @@ body.dark-mode .navbar-nav .nav-link:hover {
   position: relative;
 }
 
-/* Aplica los estilos a los elementos dentro de la clase "card" */
 .card .icon,
 .card .title,
 .card .descr {
@@ -677,6 +676,9 @@ body.dark-mode .navbar-nav .nav-link:hover {
   grid-area: title;
   font-size: 1.1rem;
   font-weight: bold;
+}
+.title{
+  min-height: 75px;
 }
 
 .card .descr {
