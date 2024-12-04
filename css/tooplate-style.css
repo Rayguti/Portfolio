@@ -556,6 +556,7 @@ body.dark-mode .navbar-nav .nav-link:hover {
   .resume-alternative{
     display: none;
   }
+
 }
 
 @media (max-width: 580px) {
@@ -591,6 +592,11 @@ body.dark-mode .navbar-nav .nav-link:hover {
     display: block;
     margin: 10px 0 0 0;
   }
+
+  p{
+    font-size: 14px;
+  }
+
 }
 @media (max-width: 320px) {
   .animated-text {
@@ -617,7 +623,9 @@ body.dark-mode .navbar-nav .nav-link:hover {
     display: inline-block;
     vertical-align: top;
   }
-
+  p{
+    font-size: 11px;
+  }
 }
 
 
@@ -669,11 +677,9 @@ body.dark-mode .navbar-nav .nav-link:hover {
 }
 
 
-
 .title{
   min-height: 95px;
 }
-
 
 ol {
   width: min(60rem, 90%);
